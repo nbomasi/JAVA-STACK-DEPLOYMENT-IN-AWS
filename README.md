@@ -46,16 +46,16 @@ For communications between the backend applications, A route 53 private dns was 
 
 ### Building the Artfact
 
-Source [code](src) was clone to my windows workstation using gitbash.
+Source [code](https://github.com/nbomasi/JAVA-STACK-DEPLOYMENT.git) was clone to my windows workstation using gitbash.
 
-I also ensured that jdk 11 and mavin is install on my windows workstation/\.
+I also ensured that jdk 11 and mavin is install on my windows workstation
 
-Then I cd into the folder containing the [code](src) and ran:
+Then I cd into the folder containing the (src) and ran:
 
 ```markdown
 mvn install
 ```
-The above command build the source code into artifact, although, the folder created is called 'target', but what is actually needed is .war file. But before this built, ensure the [properties-file](src/main/resources/application.properties) is edited with the necessary parameters.
+The above command build the source code into artifact, although, the folder created is called 'target', but what is actually needed is .war file. But before this built, ensure the src/main/resources/application.properties is edited with the necessary parameters.
 
 ### Sending the artifact into s3 Bucket
 
